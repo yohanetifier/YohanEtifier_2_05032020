@@ -1,11 +1,12 @@
 body
-{
-    font-family: "Raleway", Arial, "Times new Roman",sans-serif; 
+{    font-family: "Raleway", Arial, "Times new Roman",sans-serif; 
+
 }
 
 #main-wrapper
 {
-    width: 90%; 
+    width: 97%; 
+    margin-left: 20px; 
 }
 /* Header */
 
@@ -61,21 +62,19 @@ form
 
 }
 
-
-
 #image {
     width: 10px;
     background: grey; 
     padding: 10px; 
-    border-top-left-radius: 5px; 
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
 }
 
 input[type="search"]{
     opacity: 0.2; 
 }
 
-button
+.search
 {
     background:#0065FC;  
     padding: 4px; 
@@ -88,44 +87,168 @@ button
 
 /* Filtres */
 
-#filtres {
-
+.filtres-container {
     display: flex; 
-    margin-top: 15px; 
-    border: 2px solid red; 
-    width: 100%; 
-}
-
-#filtres button {
-    margin-left: 100px; 
-    background: white; 
-    color: black; 
-    border: 1px solid grey;
-    border-radius: 20px; 
-    width: 15%;
-    height: 50px; 
-    text-align: right;
-    padding-right: 20px; 
-    border: 2px solid green; 
+    margin-top: 20px; 
     position: relative; 
     
 }
 
-#economique:before
-{
-position: absolute; 
-right: 100px; 
-top: 10px; 
-float: left;
-width: 2em;
-text-align: center; 
-padding:0.3em; 
-pointer-events: none; 
-content: url("Projet 2 - Reservia 2/images/money-bill-wave-solid.svg"); 
-background: blue; 
-border-radius: 20px; 
+.filtres-container p {
+   position: relative; 
+   bottom: 13px;  
 }
 
+.container_icone{
+    border: 2px solid #DEEBFF; 
+    display: flex; 
+    width: 150px;
+    height: 30px;  
+    border-radius: 50px;
+    margin-left: 30px;  
+}
+
+.filtres-container img {
+    width: 10px; 
+    padding: 10px; 
+    background-color: rgb(0, 174, 255); 
+    border-radius: 20px; 
+}
+
+.container_icone button {
+    background-color: white; 
+    width: 100px;
+    text-align: center; 
+    border-radius: 50px; 
+    border: none; 
+}
+
+/* Informations complémentaires en dessous de la zone filtres */
+
+#informations {
+    display: flex; 
+}
+
+#informations img {
+    width: 20px; 
+    background-color: white; 
+    border: 2px solid green; 
+    margin-right: 10px; 
+    border-radius: 20px; 
+}
+
+/* Main section */
+
+#main-section {
+    display: flex;
+    border: 2px solid purple; 
+    justify-content: space-between;
+}
+
+/* Hebergements à Marseille */
+
+#hebergements{
+    background-color: #F2F2F2;
+    border: 4px solid red; 
+    width: 65%; 
+    border-radius: 20px; 
+    margin-top: 20px; 
+    vertical-align: top;    
+}
+
+#lot_offres {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border: 2px solid red; 
+    border-radius: 20px;  
+    align-items: stretch; 
+    justify-content: space-between;
+    width: 100%; 
+    height: 500px; 
+}
+
+#lot-offres-top{
+    display: flex; 
+    justify-content: space-around;
+}
+
+#lot-offres-bottom{
+    display: flex; 
+    justify-content: space-around;
+
+}
+
+.offres {
+    /* display: block; */ 
+    border: 2px solid red; 
+    width: 20%;
+    height: 200px;  
+    overflow: hidden; 
+    border-radius: 20px; 
+    background-color: white; 
+
+}
+
+.offres img {
+    width: 95%;
+    max-height: 100px;
+    margin-left: 5px;
+    margin-top: 4px;  
+    margin-bottom: 0px;   
+    border: 2px solid blue; 
+    border-top-right-radius: 20px;   
+    border-top-left-radius: 20px;   
+}
+
+.offres h3 {
+    border: 2px solid red; 
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    text-align: center; 
+}
+
+.offres p {
+    text-align: left; 
+    margin-top: 2px; 
+    padding-left: 14px; 
+}
+
+/* Les plus populaires */
+
+
+
+#populaire
+{
+    width: 30%; 
+    float: right; 
+    border: 2px solid orange; 
+    background-color: #F2F2F2;
+    margin-top: 20px; 
+    border-radius: 20px; 
+    
+}
+
+#populaire .offres{
+    display: flex; 
+    width: 90%; 
+}
+
+#populaire img {
+    width: 50%; 
+    border: 2px solid yellow; 
+}
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
