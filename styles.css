@@ -1,0 +1,18 @@
+/* 25px x 25px est taille de l'icône */
+#button-labo-7{
+    /* identique à #button-labo-6 */
+    }
+    #button-labo-7 span{
+      vertical-align:middle;
+      display : inline-block;
+    }
+    #button-labo-7 span:before{
+      content: "";
+      background-image : url(/img/labo/check-min.png);
+      background-repeat:no-repeat;
+      background-position : 0 0;
+      width:25px;
+      height:25px;
+      display : inline-block;
+      vertical-align:middle;
+    }
