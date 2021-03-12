@@ -216,28 +216,195 @@ input[type="search"]{
 
 /* Les plus populaires */
 
+#second-wrapper {
+    border: 2px solid blue; 
+    width: 30%; 
+    background-color: #F2F2F2;
+    margin-top: 20px; 
+    border-radius: 20px; 
+}
 
 
 #populaire
 {
-    width: 30%; 
-    float: right; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
     border: 2px solid orange; 
-    background-color: #F2F2F2;
-    margin-top: 20px; 
+    width: 100%; 
+    height: 100%;    
+}
+
+.populaire-section{
+    display: flex; 
+    width: 90%;
+    height: 25%;  
+    border: 2px solid red; 
     border-radius: 20px; 
+    margin-bottom: 20px; 
+}
+
+.populaire-section img {
+    width: 30%;
+    height: 90%; 
+    margin: 4px 4px 4px 4px;   
+    border: 2px solid yellow; 
+    border-radius: 20px; 
+}
+
+.img {
+    display: flex; 
+    border: 2px solid yellow; 
+}
+
+/* Zone activités à Marseille */
+
+#third-wrapper 
+{
+    border: 2px solid green; 
+    height: 400px; 
+    display: flex; 
+    justify-content: space-between; ; 
+}
+
+.section-portrait
+{
+    width: 22%; 
+    height: 100%; 
+    border: 2px solid red; 
+}
+
+.section-portrait img 
+{
+    width: 100%; 
+    height: 90%; 
+    border-radius: 20px; 
+}
+
+.section-portrait p 
+{
+    margin-left: 10px;
+}
+
+.section-paysage 
+{
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 30px; 
+    border: 5px solid red; 
+    width: 20%; 
+}
+
+.section-top 
+{
+    width: 100%; 
+    height: 55%; 
+    border: 2px solid red; 
+    margin-bottom: 30px; 
+    border-radius: 20px; 
+}
+
+.section-top img 
+{
+    width: 100%; 
+    border-radius: 20px; 
+
+}
+
+.section-bottom
+{
+    width: 100%; 
+    height: 35%; 
+    border: 2px solid red; 
+
+}
+
+.section-bottom img 
+{
+    width: 100%; 
+    height: 80%; 
+    border-radius: 20px; 
+}
+
+.section-paysage-right
+{
+    width: 20%; 
+    border: 2px solid red;
+    border-radius: 20px;  
+}
+
+.section-top-right 
+{
+    border: 2px solid blue; 
+    width: 100%; 
+    height: 50%; 
+    border-radius: 20px; 
+}
+
+.section-top-right img 
+{
+    width: 100%; 
+    height: 80%; 
+    border-radius: 20px; 
+}
+
+.section-bottom-right
+{
+    border: 2px solid blue; 
+    width: 100%; 
+    height: 50%; 
+    border-radius: 20px; 
+}
+
+.section-bottom-right img
+{
+    width: 100%; 
+    height: 80%;
+    border-radius: 20px; 
+}
+
+/* Footer */
+
+footer 
+{ 
+    display: flex; 
+    margin-top: 50px;
+    background-color: grey; 
+    height: 200px; 
+    align-items: center; 
+}
+
+footer .title
+{
+    margin-bottom: 20px; 
+}
+
+footer ul 
+{ 
+    margin-right: 100px; 
     
 }
 
-#populaire .offres{
-    display: flex; 
-    width: 90%; 
+footer li 
+{ 
+    list-style-type: none; 
+    margin-bottom: 10px; 
 }
 
-#populaire img {
-    width: 50%; 
-    border: 2px solid yellow; 
+footer .first-element
+{ 
+    margin-top: 50px; 
 }
+
+footer .titleone 
+{ 
+    border: 2px solid green; 
+    margin-bottom: 0px; 
+    position: relative; 
+    top: 28px; 
+}
+
+
 
 
 
