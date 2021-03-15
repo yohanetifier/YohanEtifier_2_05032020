@@ -471,7 +471,7 @@ footer
 { 
     display: flex; 
     margin-top: 50px;
-    background-color: grey; 
+    background-color: #F2F2F2;  
     height: 200px; 
     align-items: center; 
 }
@@ -479,31 +479,22 @@ footer
 footer .title
 {
     margin-bottom: 20px; 
+    font-weight: bold; 
 }
 
 footer ul 
 { 
     margin-right: 100px; 
-    
+    justify-content: space-between;  
+    height: 70%; 
+    width: 20%;   
 }
 
 footer li 
 { 
     list-style-type: none; 
     margin-bottom: 10px; 
-}
-
-footer .first-element
-{ 
-    margin-top: 50px; 
-}
-
-footer .titleone 
-{ 
-    border: 2px solid green; 
-    margin-bottom: 0px; 
-    position: relative; 
-    top: 28px; 
+    justify-content: center; 
 }
 
 
