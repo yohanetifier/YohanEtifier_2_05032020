@@ -185,13 +185,12 @@ input[type="search"]{
 }
 
 .offres img {
-    width: 95%;
-    max-height: 100px;
-    margin-left: 3px;
-    margin-top: 4px; 
-    margin-right: 3px;  
+    width: 96%;
+    max-height: 100px; 
+    padding-top: 4px; 
+    padding-left: 4px; 
+    padding-right: 4px; 
     margin-bottom: 0px;   
-    /* border: 2px solid blue;  */
     border-top-right-radius: 20px;   
     border-top-left-radius: 20px;   
 }
@@ -200,8 +199,7 @@ input[type="search"]{
     margin-top: 0px; 
     margin-bottom: 0px; 
     text-align: left ; 
-    padding-left: 14px; 
-    border: 2px solid orange; 
+    padding-left: 14px;  
 }
 
 .offres p {
@@ -209,13 +207,11 @@ input[type="search"]{
     margin-top: 2px; 
     padding-left: 14px; 
     height: 20px; 
-    border: 2px solid blue;
     margin-bottom : 0px;  
 }
 
 .notation 
 {
-    border: 2px solid blue; 
     margin-top: 0px; 
     width: 100%;
     height: 30px;
@@ -226,7 +222,6 @@ input[type="search"]{
 {
     width: 20px;  
     height: 20px; 
-    color: blue; 
 }
 
 /* Les plus populaires */
@@ -252,23 +247,53 @@ input[type="search"]{
     display: flex; 
     width: 90%;
     height: 25%;  
-    border: 2px solid red; 
     border-radius: 20px; 
     margin-bottom: 20px; 
+    background-color: white; 
+    margin-left: 15px; 
 }
 
 .populaire-section img {
     width: 30%;
-    height: 90%; 
+    height: 95%; 
     margin: 4px 4px 4px 4px;   
-    border: 2px solid yellow; 
-    border-radius: 20px; 
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
 }
 
-.img {
+.notes
+{
+    width: 100%;
+    height: 50px; 
     display: flex; 
-    border: 2px solid yellow; 
+    align-items: flex-end; 
 }
+
+.notes img
+{
+    width: 10px; 
+    align-items: middle; 
+    height: 80%; 
+    margin-top: 0px;
+    
+
+}
+
+.description h3
+{
+    margin-top: 2px; 
+    margin-bottom: 0px;
+    height: 30%;  
+}
+
+.description p 
+{
+    
+    margin-top: 10px; 
+    height: 30%; 
+    margin-bottom: 0px; 
+}
+
 
 /* Zone activités à Marseille */
 
