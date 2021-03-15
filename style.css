@@ -34,10 +34,11 @@ header ul
    
 }
 
-header li 
+header li
 {
     margin-right: 20px; 
     list-style-type: none;
+    padding-top: 20px; 
 }
 
 header a
@@ -47,8 +48,9 @@ header a
 
 header a:hover 
 {
-    color: grey; 
-    text-decoration: overline;
+    color:blue;  
+    text-decoration: overline; 
+
 }
 
 /* Section */
@@ -89,9 +91,10 @@ form
 }
 
 input[type="search"]{
-    opacity: 0.2;
     border: none;
-    width: 63%;  
+    width: 63%; 
+    font-family:"Raleway", Arial, "Times new Roman",sans-serif;
+    font-weight: bold;  
 }
 
 .search
@@ -145,6 +148,12 @@ input[type="search"]{
 
 }
 
+.container_icone button:hover 
+{
+    text-decoration: underline;
+    color:rgb(0, 174, 255); 
+}
+
 /* Informations complémentaires en dessous de la zone filtres */
 
 #informations {
@@ -166,6 +175,12 @@ input[type="search"]{
 }
 
 /* Hebergements à Marseille */
+
+#hebergements a 
+{
+    text-decoration: none; 
+    color: black; 
+}
 
 #hebergements{
     background-color: #F2F2F2;
@@ -246,6 +261,14 @@ input[type="search"]{
     height: 20px; 
 }
 
+.more-offers 
+{
+    font-weight: bold; 
+    margin-left: 20px; 
+    margin-bottom: 50px; 
+    border: none; 
+}
+
 /* Les plus populaires */
 
 #second-wrapper {
@@ -265,7 +288,7 @@ input[type="search"]{
     height: 100%;    
 }
 
-#title-section           
+#title-section          
 {
     
     display: flex; 
@@ -290,6 +313,8 @@ input[type="search"]{
     margin-bottom: 20px; 
     background-color: white; 
     margin-left: 15px; 
+    text-decoration: none; 
+    color: black; 
 }
 
 .populaire-section img {
@@ -327,7 +352,7 @@ input[type="search"]{
 {
     
     margin-bottom: 0px;
-    height: 30%;  
+    height: 30%; 
 }
 
 .description p 
@@ -339,18 +364,25 @@ input[type="search"]{
 }
 
 
+
 /* Zone activités à Marseille */
 
-#third-wrapper 
+#activites
 {
     height: 400px; 
     display: flex; 
     justify-content: space-between; ; 
 }
 
-#third-wrapper p
+#activites p
 {
     font-weight: bold; 
+}
+
+#activites a 
+{
+    text-decoration: none; 
+    color: black; 
 }
 
 .section-portrait
@@ -471,9 +503,13 @@ footer
 { 
     display: flex; 
     margin-top: 50px;
+    margin-left: 0px; 
+    margin-right: 0px; 
     background-color: #F2F2F2;  
     height: 200px; 
     align-items: center; 
+    width: 100%; 
+    border: 2px solid red; 
 }
 
 footer .title
