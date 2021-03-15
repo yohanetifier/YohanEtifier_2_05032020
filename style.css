@@ -1,5 +1,6 @@
 body
 {    font-family: "Raleway", Arial, "Times new Roman",sans-serif;
+    font-size: 12px; 
 
 }
 
@@ -339,6 +340,7 @@ input[type="search"]{
     align-items: middle; 
     height: 80%; 
     margin-top: 0px;
+    color: blue; 
     
 
 }
@@ -351,8 +353,10 @@ input[type="search"]{
 .description h3
 {
     
-    margin-bottom: 0px;
-    height: 30%; 
+    height: 20%; 
+    width: 70%; 
+    margin-bottom: 10px;  
+
 }
 
 .description p 
@@ -360,7 +364,7 @@ input[type="search"]{
     
     margin-top: 0px; 
     height: 30%; 
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
 }
 
 
