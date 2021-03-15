@@ -71,6 +71,11 @@ section p:last-child
 form 
 {
     display: flex; 
+    border: 1px solid grey;  
+    width: 22%; 
+    border-radius: 10px;
+    border-right: none;
+    border-left: none;
 
 }
 
@@ -80,10 +85,13 @@ form
     padding: 10px; 
     border-top-left-radius: 10px; 
     border-bottom-left-radius: 10px;
+    border: none; 
 }
 
 input[type="search"]{
-    opacity: 0.2; 
+    opacity: 0.2;
+    border: none;
+    width: 63%;  
 }
 
 .search
@@ -96,6 +104,7 @@ input[type="search"]{
     border: none;
     
 }
+
 
 /* Filtres */
 
@@ -133,6 +142,7 @@ input[type="search"]{
     text-align: center; 
     border-radius: 50px; 
     border: none; 
+
 }
 
 /* Informations complémentaires en dessous de la zone filtres */
@@ -308,9 +318,14 @@ input[type="search"]{
 
 }
 
+.description 
+{
+    margin-left: 10px; 
+}
+
 .description h3
 {
-    margin-top: 2px; 
+    
     margin-bottom: 0px;
     height: 30%;  
 }
@@ -318,7 +333,7 @@ input[type="search"]{
 .description p 
 {
     
-    margin-top: 10px; 
+    margin-top: 0px; 
     height: 30%; 
     margin-bottom: 0px; 
 }
