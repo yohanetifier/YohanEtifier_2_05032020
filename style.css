@@ -1,6 +1,7 @@
 body
 {    font-family: "Raleway", Arial, "Times new Roman",sans-serif;
     font-size: 12px; 
+    margin: 0px; 
 
 }
 
@@ -19,7 +20,7 @@ h2
 #main-wrapper
 {
     width: 97%; 
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 /* Header */
 
@@ -513,7 +514,6 @@ footer
     height: 200px; 
     align-items: center; 
     width: 100%; 
-    border: 2px solid red; 
 }
 
 footer .title
