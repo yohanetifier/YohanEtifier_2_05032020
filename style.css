@@ -82,10 +82,11 @@ form
     border-right: none;
     border-left: none;
 
+
 }
 
 #image {
-    width: 10px;
+    width: 5%;
     background: grey; 
     padding: 10px; 
     border-top-left-radius: 10px; 
@@ -108,6 +109,7 @@ input[type="search"]{
     border-bottom-right-radius: 10px;
     color: white; 
     border: none;
+    width: 32%; 
     
 }
 
@@ -116,27 +118,34 @@ input[type="search"]{
 
 .filtres-container {
     display: flex; 
+    flex-wrap: wrap; 
     margin-top: 20px; 
-    position: relative; 
+    width: 80%; 
     
 }
 
-.filtres-container p {
-   position: relative; 
-   bottom: 13px;  
-}
 
 .container_icone{
     border: 2px solid #DEEBFF; 
     display: flex; 
-    width: 150px;
+    width: 130px;
     height: 30px;  
     border-radius: 50px;
     margin-left: 30px;  
 }
 
+.filtres-container h3 
+{
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    height: 50px;   
+    width: 10%; 
+    padding-top: 10px; 
+    
+}
+
 .filtres-container img {
-    width: 10px; 
+    width: 10%; 
     padding: 10px; 
     background-color: rgb(0, 174, 255); 
     border-radius: 20px; 
@@ -296,16 +305,19 @@ input[type="search"]{
     
     display: flex; 
     justify-content: space-between; 
-    height: 50px; 
+    height: 30px; 
     margin-bottom: 15px; 
+
 
 }
 
 #title-section img 
 {
     width: 30px; 
-    height: 60px; 
+    height: 20px; 
+    margin-top: 10px; 
     margin-right: 20px; 
+    
 }
 
 .populaire-section{
