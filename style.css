@@ -240,13 +240,10 @@ input[type="search"]{
 
 .filtres-container {
     display: flex; 
-    flex-wrap: wrap; 
     margin-top: 20px; 
     width: 60%;
-      
-    
+         
 }
-
 
 .container_icone{
     border: 2px solid #DEEBFF; 
