@@ -184,7 +184,7 @@ input[type="search"]{
 #main-section {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse; 
 }
 
 /* Hebergements à Marseille */
@@ -586,22 +586,29 @@ input[type="search"]{
     #activites 
     {
         flex-direction: column; 
-        height: 900px;  
+        height: 1400px;  
     }
 
     #activites .section-portrait 
     {
-        height: 12%;
-        width: 88%;  
-        margin-left: 30px; 
+        height: 15%;
+        width: 90%;  
+        margin-left: 15px; 
 
+    }
+
+    #activites .section-portrait img 
+    {
+        height: 70%; 
     }
 
     #activites .section-paysage 
     {
         height: 30%; 
-        width: 88%; 
-        border-radius: 20px; 
+        width: 90%; 
+        border-radius: 20px;
+        margin-left: 15px; 
+
     }
 
     #activites .section-top
@@ -614,12 +621,18 @@ input[type="search"]{
         height: 45%; 
     }
 
+    #activites .section-paysage img 
+    {
+        height: 70%; 
+        width: 100%; 
+    }
+
     #activites .section-paysage-right
     {
         height: 30%; 
-        width: 88%; 
+        width: 90%; 
         border-radius: 20px; 
-        margin-left: 30px; 
+        margin-left: 15px; 
     }
 
     #activites .section-top-right 
@@ -632,6 +645,15 @@ input[type="search"]{
         height: 45%; 
     }
 
+    #activites .section-top-right img
+    {
+        height: 70%; 
+    }
+
+    #activites .section-bottom-right img 
+    {
+        height: 70%; 
+    }
 
 }
 
@@ -675,7 +697,6 @@ footer li
     footer 
     {
         flex-direction: column; 
-        border: 2px solid red;
         height: 500px;  
         align-items: flex-start; 
     }
