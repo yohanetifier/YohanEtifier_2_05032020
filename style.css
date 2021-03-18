@@ -553,6 +553,64 @@ input[type="search"]{
     
 }
 
+@media (max-width: 600px)
+{
+    #hebergements 
+    {
+        height: 1400px; 
+        width: 100%; 
+        background-color: white;  
+
+    }
+
+    #lot_offres
+    {
+        width: 90%; 
+        height: 90%; 
+        margin-left: 15px; 
+        margin-bottom: 20px; 
+        background-color: white;
+    }
+
+    .offres 
+    {
+        height: 30%; 
+        width: 100%;  
+        box-shadow: 2px 2px 5px 5px #F2F2F2; 
+    }
+
+    .offres .responsive
+    {
+        width: 97%; 
+        margin-left: 2px; 
+    }
+
+    
+
+    #lot-offres-top
+    {
+        flex-direction: column; 
+        
+    }
+
+    #lot-offres-bottom
+    {
+        flex-direction: column; 
+        
+    }
+
+    .notation
+    {
+        margin-left: 0px;
+        padding-left: 0px; 
+    }
+
+    .more-offers
+    {
+        background-color: white; 
+    }
+}
+
 /* Les plus populaires */
 
 #second-wrapper {
