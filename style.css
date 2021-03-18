@@ -3,6 +3,7 @@ body
     font-family: "Raleway", Arial, "Times new Roman",sans-serif;
     font-size: 12px; 
     margin: 0px; 
+    
 
 }
 
@@ -22,6 +23,21 @@ h2
 {
     width: 97%; 
     margin-left: 20px;
+}
+
+@media (max-width: 480px)
+{
+    #main-wrapper
+    {
+        width: 100%;
+        margin: 0px; 
+        border: 2px solid blue; 
+    }
+
+    body 
+    {
+        border: 2px solid red;  
+    }
 }
 /* Header */
 
@@ -56,7 +72,7 @@ header a:hover
 
 }
 
-@media (max-width: 768px)
+@media (max-width: 480px)
 {
     header 
     {
@@ -67,6 +83,8 @@ header a:hover
     header img 
     {
         width: 20%; 
+        margin-top: 13px; 
+        margin-left: 20px; 
     }
 
     #inscription 
@@ -93,7 +111,8 @@ header a:hover
         margin-left: 0px; 
         padding-left: 0px;
         margin-top: 20px; 
-        padding: 0px;  
+        padding: 0px;
+        width: 100%;   
     }
 
     header ul 
@@ -114,6 +133,7 @@ header a:hover
         font-size: 1rem; 
         font-weight: bold;  
         padding: 15px; 
+        border-bottom: 2px solid rgba(128, 128, 128, 0.5); 
 
     }
 
@@ -134,7 +154,7 @@ header a:hover
     }
 
 
-    
+   
 }
 
 /* Section */
@@ -199,8 +219,12 @@ input[type="search"]{
     display: none; 
 }
 
-@media (max-width: 768px)
+@media (max-width: 480px)
 {
+    #recherche 
+    {
+        margin-left: 20px; 
+    }
     form 
     {
         position: relative; 
@@ -232,6 +256,8 @@ input[type="search"]{
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+
+
   
 }
 
@@ -242,6 +268,7 @@ input[type="search"]{
     display: flex; 
     margin-top: 20px; 
     width: 60%;
+    margin-left: 20px; 
          
 }
 
@@ -303,7 +330,8 @@ input[type="search"]{
     .filtres-container h3 
     {
         height: 20px;
-        width: 50px;  
+        width: 50px;
+        margin-bottom: 10px; 
     }
 
      .container_icone 
@@ -327,8 +355,6 @@ input[type="search"]{
     }
 }
 
-
-
 /* Informations complémentaires en dessous de la zone filtres */
 
 #informations {
@@ -340,6 +366,15 @@ input[type="search"]{
     background-color: white; 
     margin-right: 10px; 
     border-radius: 20px; 
+}
+
+@media (max-width: 480px)
+{
+    #informations  
+    {
+        margin-top: 20px; 
+        margin-left: 20px; 
+    }
 }
 
 /* Main section */
@@ -361,7 +396,7 @@ input[type="search"]{
 #hebergements{
     flex-wrap: wrap; 
     background-color: #F2F2F2;
-    width: 750px; 
+    width: 60%; 
     border-radius: 20px; 
     margin-top: 20px; 
 }
@@ -449,11 +484,23 @@ input[type="search"]{
     border: none; 
 }
 
-@media (max-width: 768px)
+
+@media (max-width: 1024px)
+{
+    #hebergements
+    {
+        width: 100%; 
+
+    }
+}
+
+@media (max-width: 480px)
 {
     #hebergements 
     {
-        height: 1400px;  
+        height: 1400px; 
+        width: 100%; 
+        background-color: white;  
 
     }
 
@@ -463,12 +510,14 @@ input[type="search"]{
         height: 90%; 
         margin-left: 15px; 
         margin-bottom: 20px; 
+        background-color: white;
     }
 
     .offres 
     {
         height: 30%; 
         width: 100%;  
+        box-shadow: 2px 2px 5px 5px #F2F2F2; 
     }
 
     .offres .responsive
@@ -496,6 +545,11 @@ input[type="search"]{
         margin-left: 0px;
         padding-left: 0px; 
     }
+
+    .more-offers
+    {
+        background-color: white; 
+    }
     
 }
 
@@ -518,15 +572,36 @@ input[type="search"]{
     height: 100%;   
 }
 
-@media (max-width: 1200px)
+@media (min-width: 1440px)
+{
+    #second-wrapper
+    {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1024px)
 {
     #second-wrapper {
-        width: 750px; 
+        width: 100%; 
         background-color: #F2F2F2;
         margin-top: 20px; 
         border-radius: 20px; 
+        margin-left: 0px; 
 
     }
+}
+
+@media (max-width: 480px)
+{
+    #second-wrapper
+    {
+        width: 100%;
+        border-radius: 0px; 
+ 
+    }
+
+    
 }
 
 #title-section          
@@ -749,7 +824,8 @@ input[type="search"]{
     #activites 
     {
         flex-direction: column; 
-        height: 1400px;  
+        height: 1400px;
+        width: 100%;  
     }
 
     #activites .section-portrait 
@@ -860,12 +936,14 @@ footer li
     footer 
     {
         flex-direction: column; 
-        height: 500px;  
+        height: 500px;
+        width: 100%; 
         align-items: flex-start; 
     }
 
     footer ul 
     {
+        margin-top: 40px; 
         width: 90%; 
     }
 }
