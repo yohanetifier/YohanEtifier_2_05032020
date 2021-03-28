@@ -4,7 +4,6 @@ body
     font-size: 12px; 
     margin: 0px; 
     
-
 }
 
 h2, button 
@@ -23,21 +22,24 @@ h2
 {
     width: 97%; 
     margin-left: 20px;
+    max-width: 1400px; 
 }
 
-@media (max-width: 480px)
+@media (min-width: 1440px){
+    #main-wrapper{
+        margin: 0 auto; 
+    }
+}
+
+@media (max-width: 468px)
 {
     #main-wrapper
     {
         width: 100%;
-        margin: 0px; 
-        border: 2px solid blue; 
+        margin-left: 0px; 
+        height: 3200px; 
     }
 
-    body 
-    {
-        border: 2px solid red;  
-    }
 }
 /* Header */
 
@@ -49,25 +51,38 @@ header
 
 header ul
 {
-    display: flex; 
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;   
+    width: 400px; 
    
 }
 
 header li
 {
-    margin-right: 20px; 
+    margin-right: 40px; 
     list-style-type: none;
-    padding-top: 20px; 
+    padding: 20px 20px 20px 20px; 
+    width: 100%; 
+    text-align: center; 
+    
 }
+
+header li:hover {
+    border-top: 2px solid #0065FC;
+}
+
 
 header a
 {
     text-decoration: none; 
+    color: grey;
 }
 
 header a:hover 
 {
-    color:blue;  
+    color:#0065FC;  
     border-top: black; 
 
 }
@@ -90,19 +105,19 @@ header a:hover
     #inscription 
     {
         position: absolute; 
-        right: 0px; 
+        left: 100px; 
         top: 0px; 
         margin-right: 20px; 
         font-size: 1rem; 
-        color:rgb(0, 47, 255); 
         font-weight: bold; 
 
     }
 
     #inscription:hover
     {
+        border: none; 
         text-decoration: none; 
-        color:rgb(0, 47, 255); 
+        color:#0065FC; 
     }
 
     header nav 
@@ -144,16 +159,16 @@ header a:hover
 
     header .nav:hover 
     {
-        border-bottom: 2px solid rgb(0, 47, 255); 
+        border-top: none; 
+        border-bottom: 2px solid #0065FC;
+
 
     }
 
     header .nav a:hover 
     {
-        color:rgb(0, 47, 255); 
+        color:#0065FC; 
     }
-
-
    
 }
 
@@ -179,45 +194,45 @@ form
     display: flex; 
     border: 1px solid grey;  
     width: 300px; 
-    border-radius: 10px;
-    border-right: none;
-    border-left: none;
-
+    border-radius: 16px;
 
 }
 
 #image {
-    width: 5%;
-    background: grey; 
-    padding: 10px; 
-    border-top-left-radius: 10px; 
-    border-bottom-left-radius: 10px;
+    width: 4%;
+    background: #F2F2F2; 
+    padding: 12px; 
+    border-top-left-radius: 16px; 
+    border-bottom-left-radius: 16px;
     border: none; 
 }
 
 input[type="search"]{
-    border: none;
+    border: 1px solid #F2F2F2;
     width: 63%; 
     font-family:"Raleway", Arial, "Times new Roman",sans-serif;
-    font-weight: bold;  
+    font-weight: bold;
+    padding-left: 10px;   
 }
 
 .search
 {
     background:#0065FC;  
-    padding: 4px; 
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding-right: 10px; 
+    padding-left: 10px;   
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
     color: white; 
     border: none;
     width: 32%; 
     
 }
 
-#responsive-image 
-{
+#search-icon {
     display: none; 
 }
+
+
 
 @media (max-width: 480px)
 {
@@ -235,16 +250,18 @@ input[type="search"]{
         display: none; 
     }
 
-    #responsive-image 
-    {
+    #search-icon{
+        padding-right: 12px; 
+        padding-left: 12px;
+        padding-top: 14px; 
+        padding-bottom: 11px; 
+        border: none; 
         display: block;
-        background:#0065FC;  
-        padding: 10px; 
+        background:#0065FC; 
+        color: white;  
         border-radius: 10px; 
-        color: white; 
-        border: none;
         width: 15px;
-        height: 20px; 
+        height: 15px; 
         position: absolute; 
         top: 0px; 
         right: 0px; 
@@ -256,9 +273,7 @@ input[type="search"]{
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
-
-
-  
+ 
 }
 
 
@@ -268,7 +283,7 @@ input[type="search"]{
     display: flex; 
     margin-top: 20px; 
     width: 60%;
-    margin-left: 20px; 
+    margin-left: 5px; 
          
 }
 
@@ -282,6 +297,15 @@ input[type="search"]{
     
 }
 
+.filtres-images {
+    width: 25%; 
+    padding-top: 9px; 
+    background-color: #DEEBFF; 
+    border-radius: 20px;  
+    text-align: center; 
+    color: #0065FC;
+}
+
 .filtres-container h3 
 {
     margin-top: 0px; 
@@ -293,16 +317,10 @@ input[type="search"]{
     
 }
 
-.filtres-container img {
-    width: 10%; 
-    padding: 10px; 
-    background-color: rgb(0, 174, 255); 
-    border-radius: 20px; 
-}
 
 .container_icone button {
     background-color: white; 
-    width: 200px;
+    width: 75%;
     text-align: center; 
     border-radius: 20px; 
     border: none; 
@@ -312,8 +330,9 @@ input[type="search"]{
 
 .container_icone button:hover 
 {
-    text-decoration: underline;
-    color:rgb(0, 174, 255); 
+    border: none; 
+    color:#0065FC; 
+    cursor: pointer; 
 }
 
 @media (max-width: 768px)
@@ -355,24 +374,46 @@ input[type="search"]{
     }
 }
 
+@media (max-width: 468px){
+    .filtres-container    
+    {
+       margin-left: 20px;
+
+    }
+}
+
 /* Informations complémentaires en dessous de la zone filtres */
 
 #informations {
     display: flex; 
 }
 
-#informations img {
-    width: 20px; 
-    background-color: white; 
+.fa-info {
+    width: 10px;
+    height: 10px;  
+    border: 1px solid #F2F2F2; 
+    background-color: white;  
+    color: #0065FC;
     margin-right: 10px; 
-    border-radius: 20px; 
+    padding: 10px; 
+    padding-left: 15px;
+    border-radius: 50%; 
 }
 
-@media (max-width: 480px)
+@media (max-width: 768px)
 {
     #informations  
     {
         margin-top: 20px; 
+        margin-left: 5px; 
+    }
+    .fa-info {
+        padding-left: 15px; 
+    }
+}
+
+@media (max-width: 468px){
+    #informations{
         margin-left: 20px; 
     }
 }
@@ -383,9 +424,15 @@ input[type="search"]{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap-reverse; 
+    margin-bottom: 40px; 
 }
 
 /* Hebergements à Marseille */
+
+#hebergements h2
+{
+    margin-top: 30px; 
+}
 
 #hebergements a 
 {
@@ -398,7 +445,7 @@ input[type="search"]{
     background-color: #F2F2F2;
     width: 60%; 
     border-radius: 20px; 
-    margin-top: 20px; 
+    margin-top: 20px;  
 }
 
 
@@ -430,13 +477,27 @@ input[type="search"]{
     height: 200px;  
     overflow: hidden; 
     border-radius: 20px; 
-    background-color: white; 
+    background-color: white;
+    border: 2px solid green;  
 
 }
 
+.hotel-image{
+    border: 2px solid red; 
+    width: 100%; 
+    height: 50%;
+    overflow:hidden;  
+}
 
+.hotel-image img {
+    border: 2px solid purple; 
+    width: 100%; 
+    height: auto;
+    display: block; 
 
-.offres img {
+}
+
+/* .offres img {
     width: 96%;
     max-height: 100px; 
     padding-top: 4px; 
@@ -445,7 +506,7 @@ input[type="search"]{
     margin-bottom: 0px;   
     border-top-right-radius: 20px;   
     border-top-left-radius: 20px;   
-}
+} */
 
 .offres h3 {
     width: 100%; 
@@ -465,9 +526,22 @@ input[type="search"]{
 .notation 
 {
     margin-top: 0px; 
-    width: 100%;
+    width: 45%;
     height: 40px;
-    padding-left: 13px;   
+    padding-left: 13px; 
+  
+}
+
+.notation .fa-star {
+    width: 10%;  
+    height: 30%; 
+    color: #0065FC; 
+    background-color: white; 
+    margin-right: 0px; 
+}
+
+.notation .empty {
+    color: #F2F2F2; 
 }
 
 .notation img 
@@ -601,7 +675,7 @@ input[type="search"]{
 
     .notation
     {
-        margin-left: 0px;
+        margin-left: 15px;
         padding-left: 0px; 
     }
 
@@ -627,7 +701,27 @@ input[type="search"]{
     flex-direction: column; 
     justify-content: flex-start; 
     width: 100%; 
-    height: 100%;   
+    height: 100%; 
+}
+
+
+
+.notes .fa-star {
+    background: white;
+    color: #0065FC;
+    width: 14px; 
+    margin-bottom: 5px;  
+    
+}
+
+.notes .empty {
+    color: #F2F2F2; 
+}
+
+#populaire #title-section {
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    height: 30px; 
 }
 
 @media (min-width: 1440px)
@@ -704,21 +798,10 @@ input[type="search"]{
 
 .notes
 {
-    width: 100%;
-    height: 50px; 
+    width: 60%;
+    height: 30px; 
     display: flex; 
     align-items: flex-end; 
-}
-
-.notes img
-{
-    width: 10px; 
-    align-items: middle; 
-    height: 80%; 
-    margin-top: 0px;
-    color: blue; 
-    
-
 }
 
 .description 
@@ -747,6 +830,7 @@ input[type="search"]{
 
 /* Zone activités à Marseille */
 
+
 #activites
 {
     height: 400px; 
@@ -765,9 +849,15 @@ input[type="search"]{
     color: black; 
 }
 
+.container-activites {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-around;
+}
+
 .section-portrait
 {
-    width: 22%; 
+    width: 45%; 
     height: 100%; 
     box-shadow: 2px 2px 5px 5px #F2F2F2; 
     border-radius: 20px; 
@@ -776,7 +866,7 @@ input[type="search"]{
 .section-portrait img 
 {
     width: 100%; 
-    height: 90%; 
+    height: 87%; 
     border-top-left-radius: 20px; 
     border-top-right-radius: 20px; 
 }
@@ -790,15 +880,14 @@ input[type="search"]{
 {
     display: flex; 
     flex-direction: column; 
-    margin-left: 30px; 
-    width: 20%; 
+    width: 45%; 
     
 }
 
 .section-top 
 {
     width: 100%; 
-    height: 60%; 
+    height: 55%; 
     margin-bottom: 30px; 
     border-radius: 20px;
     box-shadow: 2px 2px 5px 5px #F2F2F2;  
@@ -816,7 +905,7 @@ input[type="search"]{
 .section-bottom
 {
     width: 100%; 
-    height: 33%; 
+    height: 38%; 
     box-shadow: 2px 2px 5px 5px #F2F2F2; 
     border-radius: 20px; 
 
@@ -825,7 +914,7 @@ input[type="search"]{
 .section-bottom img 
 {
     width: 100%; 
-    height: 70%; 
+    height: 64%; 
     border-top-left-radius: 20px; 
     border-top-right-radius: 20px; 
 }
@@ -837,7 +926,7 @@ input[type="search"]{
 
 .section-paysage-right
 {
-    width: 20%; 
+    width: 45%; 
     border-radius: 20px;  
     display: flex; 
     flex-direction: column;
@@ -872,86 +961,63 @@ input[type="search"]{
 .section-bottom-right img
 {
     width: 100%; 
-    height: 80%;
+    height: 73%;
     border-top-left-radius: 20px; 
     border-top-right-radius: 20px;
 }
 
-@media (max-width: 768px) 
+@media (max-width: 468px) 
 {
-    #activites 
-    {
+   #activites
+   {
+       display: flex;
+       flex-direction: row;  
+       justify-content: space-around;
+       width: 100%; 
+       margin: 10px;
+       margin-right: 15px;    
+   }
+
+   .container-activites {
+       width: 95%; 
+
+   }
+
+   .section-portrait{
+       margin-left: 10px; 
+   }
+
+   .section-paysage {
+       width: 100%; 
+   }
+
+}
+
+@media (max-width: 1024px) 
+{
+    #activites {
         flex-direction: column; 
-        height: 1400px;
-        width: 100%;  
+        height: 700px;
+        justify-content: space-between; 
     }
-
-    #activites .section-portrait 
+    .container-activites {
+        height: 50%; 
+    }
+    .section-portrait
     {
-        height: 15%;
-        width: 90%;  
-        margin-left: 15px; 
-
+    width: 45%; 
+    height: 90%; 
+    box-shadow: 2px 2px 5px 5px #F2F2F2; 
+    border-radius: 20px;
     }
-
-    #activites .section-portrait img 
-    {
-        height: 70%; 
+    .section-paysage{
+        width: 45%; 
+        height: 90%; 
     }
-
-    #activites .section-paysage 
-    {
-        height: 30%; 
-        width: 90%; 
-        border-radius: 20px;
-        margin-left: 15px; 
-
+    .section-paysage-right {
+        height: 90%; 
     }
-
-    #activites .section-top
-    {
-        height: 45%;
-    }
-
-    #activites .section-bottom
-    {
-        height: 45%; 
-    }
-
-    #activites .section-paysage img 
-    {
-        height: 70%; 
-        width: 100%; 
-    }
-
-    #activites .section-paysage-right
-    {
-        height: 30%; 
-        width: 90%; 
-        border-radius: 20px; 
-        margin-left: 15px; 
-    }
-
-    #activites .section-top-right 
-    {
-        height: 45%; 
-    }
-
-    #activites .section-bottom-right 
-    {
-        height: 45%; 
-    }
-
-    #activites .section-top-right img
-    {
-        height: 70%; 
-    }
-
-    #activites .section-bottom-right img 
-    {
-        height: 70%; 
-    }
-
+    
 }
 
 /* Footer */
@@ -1005,6 +1071,8 @@ footer li
         width: 90%; 
     }
 }
+
+
 
 
 
