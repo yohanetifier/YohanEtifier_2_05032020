@@ -3,8 +3,10 @@ body
     font-family: "Raleway", Arial, "Times new Roman",sans-serif;
     font-size: 12px; 
     margin: 0px; 
-    
+    overflow-x: hidden;
 }
+
+
 
 h2, button 
 {
@@ -38,7 +40,9 @@ h2
         width: 100%;
         margin-left: 0px; 
         height: 3200px; 
+        max-width: 100%;
     }
+    
 
 }
 /* Header */
@@ -1107,6 +1111,13 @@ footer li
     {
         margin-top: 40px; 
         width: 90%; 
+    }
+}
+
+@media (min-width: 1440px){
+    footer  {
+        border: 2px solid red; 
+        justify-content: center; 
     }
 }
 
