@@ -1110,10 +1110,15 @@ footer li
         width: 90%; 
     }
 }
+@media (max-width: 1440px){
+    .footer-for-larger-size{
+        display:none; 
+    }
+}
 
 @media (min-width: 1440px){
-    footer  {
-        justify-content: center; 
+    .footer-for-normal-size {
+        display: none; 
     }
 }
 
