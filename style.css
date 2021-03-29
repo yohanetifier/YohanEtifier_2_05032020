@@ -192,7 +192,6 @@ section p:last-child
 form 
 {
     display: flex; 
-    border: 1px solid grey;  
     width: 300px; 
     border-radius: 16px;
 
