@@ -1,4 +1,4 @@
-
+/* General */
 
 body
 {    
@@ -20,7 +20,11 @@ h2
     margin-left: 20px; 
 }
 
+button:focus, input:focus {
+    outline: 0; 
+}
 
+/* Main-wrapper */
 
 #main-wrapper
 {
@@ -189,10 +193,10 @@ header a:hover
 
 /* Section */
 
-section p:first-child
-{
+section h2{
     font-size: 1.2rem; 
     font-weight: 700; 
+    margin-left: 0px; 
     margin-bottom: 5px; 
     padding-bottom: 0px; 
 }
