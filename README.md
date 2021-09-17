@@ -3,7 +3,8 @@
 1er projet du parcours de développement web OpenClassrooms. 
 Ce projet a été réalisé en mars 2021. 
 
-/Users/yohanetifier/Desktop/Projet OpenClassRooms/P2_ETIFIER_YOHAN/Projet-2-Reservia/Desktop - 1.png
+Un lien ci dessous pour voir le projet Reservia
+https://www.youtube.com/watch?v=wCM-tW0rt8c
 
 ## Éléments fournis par l'entreprise virtuelle.
 
