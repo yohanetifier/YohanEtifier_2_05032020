@@ -3,8 +3,8 @@
 1er projet du parcours de développement web OpenClassrooms. 
 Ce projet a été réalisé en mars 2021. 
 
-Le lien pour voir le projet Reservia
-[Projet Reservia](https://www.youtube.com/watch?v=wCM-tW0rt8c)
+[Cliquez ici](https://www.youtube.com/watch?v=wCM-tW0rt8c) pour voir la vidéo du projet Reservia
+
 
 ## Éléments fournis par l'entreprise virtuelle.
 
