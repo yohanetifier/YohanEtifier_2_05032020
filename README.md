@@ -4,7 +4,7 @@
 Ce projet a été réalisé en mars 2021. 
 
 Le lien pour voir le projet Reservia
-[https://www.youtube.com/watch?v=wCM-tW0rt8c](Projet Reservia)
+[Projet Reservia](https://www.youtube.com/watch?v=wCM-tW0rt8c)
 
 ## Éléments fournis par l'entreprise virtuelle.
 
